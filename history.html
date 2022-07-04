@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>School Profile</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"/>
+    <style>
+       /* body {
+    max-width: 1000px;
+    margin: auto;
+  } */
+  header{
+    background-color: #011d6b;
+ 
+  }
+  .class2{
+  max-width: 1000px;
+    margin: auto;
+    background-color: white;
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+  }
+  body {
+  background-image: url(/images/bg4);
+  }
+  .logo{
+    width: 10vw;
+    margin: 0px 10px;
+    
+  }
+  .head1{
+    text-align: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  }
+
+  #heading {
+    text-align: center;
+    font-size: 5vw;
+    color: white;
+    font-family: "Algerian","Cambria", "Cochin", Georgia, Times, "Times New Roman", serif;
+    padding-top: 17px;
+   
+  }
+  .heading2{
+    text-align: center;
+    font-size: 2vw;
+    color: #f9d85a;
+    font-family: "Cambria", "Cochin", Georgia, Times, "Times New Roman", serif;
+    padding-bottom: 20px;
+  } 
+  
+  #welcome {
+    text-align: center;
+    font-size: 38px;
+    color:white;
+    font-family: "Cambria", "Cochin", Georgia, Times, "Times New Roman", serif;
+  }
+  #welcome p {
+    font-size: 25px;
+  }
+  
+  .topnav {
+    overflow: hidden;
+    background-color: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 6;
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+margin: 3px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.history {
+    background-color: #011d6b;
+    color: white;
+  }
+  
+  .topnav input[type="text"] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+  }
+  
+  .topnav .icon {
+        display: none;
+      }
+      
+      .icon{
+        width: 90px;
+        padding-right: 250px;
+      }
+      @media screen and (max-width: 600px) {
+        .topnav a:not(:first-child) {display: none;}
+        .topnav a.icon {
+          float: right;
+          display: block;
+        }
+      }
+      
+      @media screen and (max-width: 600px) {
+        .topnav.responsive {position: relative;}
+        .topnav.responsive .icon {
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+        .topnav.responsive a {
+          float: none;
+          display: block;
+          text-align: left;
+        }
+      }
+
+  
+  #school-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px 25px 25px 25px;
+    /* width: 95%; */
+    height: 200px;
+  }
+  
+  .container {
+    display: flex;
+    width: 920px;
+    height: auto;
+    margin: 30px auto;
+  }
+  .box {
+    width: 32%;
+    height: auto;
+    border: 1px solid #ccc;
+    margin-right: 1%;
+    background: white;
+    border-radius: 10px;
+    transition: 0.9;
+    text-align: center;
+  }
+  .box:hover {
+    box-shadow: 0 0 11px rgba(33, 33, 33, 0.8);
+    cursor: pointer;
+  }
+  
+  @media (max-width: 800px) {
+    .container {
+      width: 100%;
+    }
+  }
+  @media (max-width: 600px) {
+    .container {
+      width: 85%;
+      display: block;
+    }
+    .box {
+      width: 100%;
+      margin-bottom: 4%;
+    }
+  }
+  img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+.footer{
+    width: 100%;
+}
+
+  .footer1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #3a3b3e;
+    color: white;
+    padding: 5px 10px 5px 10px;
+    width: 100%;
+  }
+  .footerlogo{
+width: 15vw;
+margin-left: 10px;
+  }
+  .footer-about {
+    /* background: #2c36ab; */
+    width: 20vw;
+    display: inline-block;
+    flex-basis: 700px;
+    margin-left: 10px;
+    padding:35px;
+    margin-right: -21px;
+  }
+  .footer-social{
+    width: 20vw;
+    /* background: #2c36ab; */
+    display: inline-block;
+    flex-basis: 400px;
+    margin-left: 4px;
+margin-top: 50px;
+justify-content: center;
+     display: flex;
+  }
+
+  .img1{
+    width: 60px;
+    margin: 15px;
+  }
+  .img1 img{
+    width: 57px;
+    margin: 15px;
+    border-radius: 16px;
+  }
+  #footer {
+    flex-basis: 300px;
+  }
+  .footer2{
+   display: flex;
+   color: rgb(203, 202, 202);
+   flex-direction: row;
+   background: #242426;
+  padding: 50px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-top: 45px;
+padding-bottom: 17px;
+padding-right: 50px;
+padding-left: 50px;
+  }
+ 
+ 
+  
+  .rights {
+    /* display: block; */
+    padding: 20px 20px;
+    margin: auto;
+    background: #000;
+    color: white;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    padding-bottom: 13px;
+  }
+
+.class2{
+    background-color: white;
+}
+  .class2a{
+    width: 35vw;
+    text-align: justify;
+    /* display: inline-block; */
+    float: left ;
+    padding-left: 35px;
+    background-color: white;
+  }
+ 
+  .class2c{
+   
+    float: right;
+    width: 35vw;
+    text-align: justify;
+    /* display: inline-block; */
+    padding-right: 35px;
+    background-color: white;
+  }
+  
+   .resources {
+    float: left;
+    overflow: hidden;
+  }
+  .resources .resourcebtn {
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: black;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .dropdown-content a:hover,
+  .resources .resourcebtn:hover {
+    background-color: #ddd;
+  }
+
+  .resources:hover .dropdown-content {
+    display: block;
+  }
+  .heading3{
+    text-align: center;
+    font-size: 3.5vw;
+  }
+  .para0{
+    max-width: 1000px;
+    margin: auto;
+    background-color: white;
+    text-align: center;
+  }
+  .para{
+    max-width: 1000px;
+    margin: auto;
+    background-color: white;
+    display: flex;
+text-align: justify;
+    justify-content: space-between;
+  }
+  .para1{
+    float: left;
+    padding-left: 20px;
+    margin-right: 40px;
+  }
+  .para2{
+    float:right;
+    padding-right: 20px;
+  }
+
+  .historyimg{
+   
+    width: 310px;
+margin-left: 71px;
+  }
+
+  
+    </style>
+  </head>
+
+
+  <body>
+    
+    </div>
+    <header>
+        <div class="head1">
+        <img src="/images/logo2.png"  class="logo" alt="school logo">
+      <div class="headtitle">
+        <h1 id="heading"> Bombay  Scottish  School</h1>
+    
+        <h6 class="heading2">--------------------------Established in 1847--------------------------</h6>
+        </div>
+      </div>
+        </header>
+        <div class="topnav">
+            <a class="active" href="/index.html">Home</a>
+            <a href="/Admission.html">Admissions</a>
+            <a href="/Facilities.html">Facilities</a>
+            <a href="/Activities.html">Activities</a>
+            <a href="/profile.html">School profile</a>
+            <a class="history" href="/history.html">School History</a>
+            <a href="/uniform.html">Uniform</a>
+            <a href="/curriculum.html">Curriculum</a>
+            <a href="/contact.html">Contact us</a> 
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+        </div>
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+              <!-- <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button> -->
+              <!-- <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button> -->
+            </div>
+            
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/images/history2.jpg" alt="Los Angeles" class="d-block" style="width:100%">
+              </div>
+              <div class="carousel-item">
+                <img src="/history2.jpg" alt="Chicago" class="d-block" style="width:100%">
+              </div>
+              <!-- <div class="carousel-item">
+                <img src="/carousel4.jpg" alt="New York" class="d-block" style="width:100%">
+              </div> -->
+            </div>
+            
+            <!-- Left and right controls/icons -->
+            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button> -->
+          </div>
+          <div class="para0">
+            
+            <br>
+            <h1 class="heading3"><b></b> -------------SCHOOL HISTORY-------------</b></h1>
+        
+        <hr>
+<div class="para">
+    
+    <div class="para1">
+       
+<p>The formation of Bombay Scottish School began in 1847 when the Scottish Christian missionaries established the Scottish Female Orphanage at Byculla, for benefit of the daughters of Presbyterian soldiers and Indian Navy Seamen. The success of this first institution led to the establishment of the Orphanage for the Sons of Presbyterians in 1856. These two humble institutions were united in 1859 under the name of the Bombay Presbyterian Male and Female Orphanage. The name was changed in 1863 to the Bombay Scottish Orphanage.</p>
+<br>
+<p>In 1867, a society with its own constitution, and rules and regulations, was formed. A new constitution was adopted in 1886 and since then the Society is known as the Bombay Scottish Orphanage Society.</p>
+<br>
+<p>With the principal objective of equipping the children to take their place in the society, a large plot of land was acquired on the beautiful Mahim Bay. The Government of Bombay in 1875 approved construction of the boarding school building designed by D E Gostling, F R I B A and J Morris. The construction of the building commenced on 8th December 1875 by his Excellency, the Honourable Sir Philip Edmond Wodehouse, the then Governor and President in Council and was completed on 28th February 1878, at a cost of Rs 84,015. The facility was opened to use by his Excellency, the Hon. Sir Richard Temple Bart, G C S I the then Governor and President in Council.</p>
+<br>
+<p>In the early years the student strength was a mere 30 odd. As classes were added and the standard of education effectively upgraded, the Orphanage was elevated to the position of a high school and went by the name The Bombay Scottish Orphanage High School. When the Orphanage was closed down its name was changed to The Bombay Scottish School.</p>
+<br>
+<p>In 1935, the student strength exceeded 100 for the first time. Gradually, the Orphanage which was meant to cater exclusively to the needs of Scottish children opened its doors to children of English and European descent.</p>
+<br>
+<p>The boarding school was an imposing, single-storey colonial style structure. The ground floor accommodated the classrooms, the school office, and a chapel-cum-hall which is now called the Mackay Hall in memory of the first Principal.</p>
+<br>
+<p>The two boundary walls on either side of Cadell Road, now known as Veer Savarkar Marg, and the gates were constructed in the style of the medieval castles of Scotland.</p>
+<br>
+<p>
+    The Orphanage was run on a government grant in the pre independence period, but it owed its survival and growth to many charitable individuals and religious institutions. Scotsmen at home and abroad donated generously to the school.
+</p>
+<br>
+<p>Indian philanthropists did not lag behind. Sir Cowasjee Jehangir, C N Cama, Bhanji Jaitha Veeram, and the Wadia family were some of the earliest Indian donors to contribute to the Orphanage. Parsee, Hindu Muslim donors showered their munificence on a Christian institution.</p>
+<br>
+<p>The management of the school was in the hands of a Committee of Management. Glancing through the list of members on the committee in 1914, the Chief Guest, the Honourable Mr. Claude Hill, remarked that nearly everybody he knew in the public life of Bombay was on the committee of the Bombay Scottish Orphanage Society. The committee was headed by a chairman, assisted by a deputy chairman, the members of the committee, an honorary treasurer, and an honorary secretary. However, the life and activities of the Orphanage were steered by a superintendent assisted by a lady superintendent.</p>
+<br>
+<p>A ladies committee did yeomen service, raising funds and providing entertainment. The Bombay Scottish Ball was considered to be one of the finest events of the year.</p>
+<br>
+<p>In 1914, an English lady who was the mistress of a well-known school of her own remarked, The Orphanage was one of the best schools in Bombay and that it would be well if many others took a lesson from it. Her Excellency, the Honourable Lady Lloyd, wife of Sir George Lloyd, the then Governor of Bombay, noted the excellence of the music taught, the good manners of the children and the high standard of the work of the school.</p>
+<br>
+<p>Chief Guests and special invitees to the school functions included Bombays elite  the doyens of society and government, royalty, governors and chief justices. To name just a few : their Excellencies, Lord and Lady Willingdon, Lord and Lady Brabourne, Lord and Lady Lamington, Sir Wodehouse and the Honourable Mr. P R Cadell, I C S.</p>
+<br>
+<p>During the post-Independence years, successive British High Commissioners, the Moderator of the General Assembly of the Church of Scotland, the Governor of Maharashtra, Dr P C Alexander and Mrs. Alexander, distinguished Chiefs from the defence forces, Chief Commissioners of Police, judges of the Bombay High Court, entrepreneurs and academicians have graced the school with their presence.</p>
+<br>
+<p>The turn of the century witnessed many momentous events in the growth and expansion of the Orphanage. From near bankruptcy during the war years, the school had burgeoned into one of the premier educational institutions.</p>
+<br>
+<p>With characteristic resourcefulness and an eye to economy, the Scotsman began to admit English children to the Orphanage; and later in 1904, non-European day-scholars, for a fee, to augment the flagging resources of the school exchequer. With true Scottish perseverance, the school authorities overcame insurmountable hurdles like shortage of funds and epidemics.</p>
+<br>
+</div>
+    <div class="para2">
+<div class="para2a">
+<img src="/images/history 3.jpg" class="historyimg" alt="history">
+</div>
+<div class="para2b">
+   
+    <p>
+        In 1901, a very useful, spacious, well-ventilated, covered play shed for girls was constructed at the south end of the Orphanage compound. Mrs. Margaret Dick of Glasgow donated 100 for its erection.
+    </p>
+    <br>
+    <p>In 1912, the academic work at the school and performance of the students suffered greatly in the wake of a serious outbreak of measles and whooping cough and the prolonged illness of some of the students. During the Great Bombay Plague, Mrs. Anderson, the lady superintendent, and a servant succumbed to the dreadful disease.</p>
+    <br>
+    <p>In 1915, the Heritage Building was extended on its east or rear side. Constructed in reinforced concrete, the east wing was completed at a cost of Rs 12,548-14-8. The ground-floor space was used as a classroom while the room above it was used as a small infirmary that could accommodate four patients.</p>
+    <br>
+    <p>In 1920, the large playground in front of the sea was extended by clearing land and was made available for the use.</p>
+    <br>
+    <p>During the earliest years, when there were no more than 50-60 boarders, the school moved in April to the hill-station of Matheran. The children spent the entire summer at The Hermitage, bungalow owned by the Society, escaping from the hot, humid, unhealthy climate of the island. The school sports held on Olympia in Matheran was a regular and memorable feature.</p>
+    <br>
+    <p>Soon, the numbers increased and the fine reputation of the school enjoyed along with the glowing reports from successive Inspectors of Schools attracted more and more day-scholars till the extension to the old building became inevitable.</p>
+    <br>
+    <p>With the steady rise in the number of day-scholars, students were prepared here for the Junior Cambridge Examination and later for the Senior Cambridge Examination at the end of Standard XI. Since then, there has been no looking back as the school moves on to brighter and newer horizons.</p>
+    <br>
+    <p>In 1927, the office of the Principal was instituted and Mr. Adam Mackay became the first Principal.</p>
+    <br>
+    <p>During his tenure, the flag post was erected a gift from Mackinnon Mackenzie & Company.</p>
+    <br>
+    <p>The school uniform was introduced in 1955 and the name The Bombay Scottish Orphanage High School changed to Bombay Scottish School in 1976. The school changed from I S C (Cambridge Board) to the present I C S E in 1976; and the commencement of the academic year changed from January to June each year with effect from 1977.</p>
+    <br>
+    <p>1935 was a landmark year as for the first time in the life of the school, the number of students exceeded 100. To meet the growing demand for a good education at Bombay Scottish Orphanage and the requirements of the Inspector of European Schools, the Society made alterations to the existing Heritage Building in 1937. In the same year, the Society also constructed the ground floor of the North Block. A total expenditure of Rs 73,000 was incurred. The school could now impart education to 200 children. As better equipped laboratories were needed for the teaching of the sciences, the North Block was extended by another floor in 1958-59.</p>
+    <br>
+    <p>There being no abatement in the demand for admissions, the old shed at the south was demolished to commence construction of a new three-storied school building, the South Block. The Moderator of the General Assembly of the Church of Scotland, the Rt. Rev. Archibald Watt, DD, opened for use the South Block on Saturday, 11th December 1965. The new South Block was completed in March 1967.</p>
+    <br>
+    <p>On 28th February 1971, Mr. R C Watson, Chairman, BSOS, opened for use the second floor of the North Block.</p>
+    <br>
+    <p>In the same year, 1971, a modern fully equipped gymnasium was constructed as an extension to the Heritage Building on its east or rear side, along with a dining hall on the first floor above the gymnasium.</p>
+    <br>
+    <p>A new three-storied structure now known as the Andrews Block, a harmonious blend of tradition and modernity, was inaugurated on 17th April 1997 by Dr P C Alexander, Governor of Maharashtra.</p>
+    <br>
+    <p>For the present, Scottish, as she is affectionately referred to, proposes to take up the daunting task of leading the present generation into the 21st century.</p>
+    <br>
+    <p>More importantly, on the moral front, a concerted and consistent effort is made to help Scottishites cope with the evolving and complex environment of an emerging nation and take their place, in all fields and disciplines.</p>
+</div>
+</div>
+    </div>
+</div>
+
+    <footer>
+        <div class="footer1">
+            <div class="footerlogo">
+            <img src="/images/logo2.png"  alt="logo" id="footer-logo">
+          </div>
+         
+            <div class="footer-about">
+            
+              <p>
+                <h3><b> Keep in touch</b></h3> 
+                Stay connected with us for our weekly newsletter to get the latest news, updates and stay in the loop to find out what parents are talking about delivered directly in your inbox.
+                
+              </p>
+            </div>
+          <div class="footer-social">
+            <div class="img1">
+            <a href="https://twitter.com/bombayscottish?lang=en">
+              <img src="/images/twitter2.png" alt="twitter" >
+            </a>
+          </div>
+          <div class="img1">
+            <a href="https://www.instagram.com/bombayscottishmahimofficial/?hl=en">
+              <img src="/images/insta2.jpg" alt="instagram" >
+            </a>
+          </div>
+          <div class="img1">
+            <a href="https://m.facebook.com/profile.php?id=103113639728603">
+              <img src="/images/facebook3.webp" alt="facebook" >
+            </a>
+          </div>
+          <div class="img1">
+            <a href="https://www.linkedin.com/school/bombay-scottish-school/?originalSubdomain=in">
+              <img src="/images/linkden.png" alt="linkden" >
+            </a>
+          </div>
+            </div>
+          </div>
+        <div class="footer2">
+        <div class="box6">
+         <p>Home</p>
+         <p>Admission</p>
+         <p>School History</p>
+         <p>Uniform</p>
+        </div>
+      
+        <div class="box7">
+          <p>Activities</p>
+          <p>Sports</p>
+          <p>Competition</p>
+          <p>Trips</p>
+        </div>
+       
+        <div class="box8">
+          <p>Facilities</p>
+          <p>Library</p>
+          <p>Science Laboratory</p>
+          <p>Computer Laboratory</p>
+        </div>
+        <div class="box9">
+          <p>Contact us</p>
+          <p>School Profile</p>
+          <p>Curriculam</p>
+          <p>Uniform</p>
+        </div>
+        </div>
+        <div class="rights">
+          <p>
+            <b> Copyright  @  2022 Bombay Scottish School | Legal Information | All Right Reserved </b>
+           </p>
+        </div>
+      </footer>
+      <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+        </script>
+  </body>
+</html>
