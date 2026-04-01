@@ -6,12 +6,7 @@
 
 <br>
 
-```
-  ✦ ─────────────────────────────────────────────────────────── ✦
-       ☀   S U N R I S E   A C A D E M Y   ☀
-       Nurturing Minds  ·  Shaping Futures  ·  Est. 1985
-  ✦ ─────────────────────────────────────────────────────────── ✦
-```
+<img src="banner.svg" alt="Sunrise Academy" width="100%" />
 
 <br>
 
@@ -137,17 +132,13 @@
 
 ## 🛠️ Technology Stack
 
-```
-┌─────────────────────────────────────────────────────────────┐
-│                     TECHNOLOGY STACK                        │
-├────────────────┬────────────────────────────────────────────┤
-│  Structure     │  HTML5  —  Semantic elements, ARIA, SEO    │
-│  Presentation  │  CSS3   —  Custom properties, Grid, Flex   │
-│  Behaviour     │  JS ES6 —  Vanilla, no frameworks/libs     │
-│  Fonts         │  Google Fonts  (Inter + Playfair Display)  │
-│  Icons         │  Unicode Emoji  (zero external icon deps)  │
-└────────────────┴────────────────────────────────────────────┘
-```
+| Layer | Technology | Details |
+|-------|-----------|--------|
+| Structure | **HTML5** | Semantic elements, ARIA roles, SEO meta |
+| Presentation | **CSS3** | Custom properties, Grid, Flexbox |
+| Behaviour | **JavaScript ES6** | Vanilla — no frameworks or libraries |
+| Fonts | **Google Fonts** | Inter + Playfair Display |
+| Icons | **Unicode Emoji** | Zero external icon dependencies |
 
 > **Zero dependencies.** No npm, no bundler, no runtime required.  
 > Open `index.html` and it works — on any device, any browser, offline.
@@ -219,11 +210,9 @@ open index.html
 
 ---
 
-```
-  ✦ ─────────────────────────────────────────────────────────── ✦
-          ☀   Sunrise Academy  —  Est. 1985   ☀
-  ✦ ─────────────────────────────────────────────────────────── ✦
-```
+<img src="footer-banner.svg" alt="Sunrise Academy Footer" width="100%" />
+
+<br>
 
 📍 &nbsp;123 Education Boulevard, Learning City, LC 12345 &nbsp;&nbsp;
 📞 &nbsp;+1 (555) 123-4567 &nbsp;&nbsp;
